@@ -6,6 +6,8 @@
 
 #include "driver.h"
 
+#include <cstdint>
+
 bool MeterFeeder::Driver::Initialize(string* errorReason) {
 	DWORD numDevices;
 	FT_STATUS ftdiStatus = FT_CreateDeviceInfoList(&numDevices);
